@@ -1,0 +1,105 @@
+body {
+  line-height: 1.5;
+  display: block;
+  min-width: 260px;
+  color: #4d4e53;
+  font-family: 'Urbanist', sans-serif;
+  background-color: white;
+}
+
+#navbar {
+  position: fixed;
+  min-width: 260px;
+  width: 300px;
+  background-color: white;
+  top: 0px;
+  left: 0px;
+  height: 100vh; 
+  border-right: solid;
+  text-align: center;
+  overflow-y: auto; 
+}
+
+#navbar a {
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 1.5;
+  cursor: pointer;
+  padding-left: 10%;
+  color: #4d4e53;
+}
+
+#navbar ul {
+list-style-type: none;
+padding: 0;
+max-height: 100%;
+overflow-x: hidden;
+overflow-y: scroll;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+max-height: 80%;
+}
+
+#navbar li {
+
+  background-color: #4d4e5345;
+  text-align: left;
+  position: relative;
+  width: 100%;
+  height: 30%;
+  margin-bottom: 5%;
+  text-align: left;
+}
+
+#navbar li:last-of-type {
+  margin-bottom: 10vh;
+}
+
+#navbar li:first-of-type {
+  margin-top: 1vh;
+}
+
+#navbar header {
+  font-weight: bold;
+  font-size: 25px;
+  padding: 5%;
+  text-align: center;
+  color: black;
+  border-bottom: solid 3px #4d4e53;
+}
+
+
+#main-doc {
+  position: absolute;
+  margin-left: 360px;
+  margin-right: 60px;
+  margin-bottom: 30px;
+  margin-top: 16px;
+  font-size: 18px;
+}
+
+#main-doc header {
+font-size: 30px;
+font-weight: bold;
+color: black;
+}
+
+p {
+  text-align: justify;
+}
+
+.main-section {
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 767px) {
+    #navbar {
+  min-width: 20px;
+  width: 100px;
+}
+ #main-doc {
+  margin-left: 120px;
+}
+}
